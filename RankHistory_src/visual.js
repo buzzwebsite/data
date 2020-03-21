@@ -17,20 +17,24 @@
     r.readAsText(this.files[0], config.encoding);
     r.onload = function() {
 */
+/*
       //读取完成后，数据保存在对象的result属性中
   function loadXMLDoc() {
-    draw();
-    /*
+      
+    
     try {
       draw();
     } 
     catch (error) {
       alert(error);
     }
-    */
+    
   } 
+*/
 
   function init() {
+    var svg_width = document.getElementById("svg_window");
+    svg_width.setAttribute("width",window.innerWidth);
     var txtlink = "https://raw.githubusercontent.com/buzzwebsite/data/master/RankHistory.txt";
     var xmlhttp;
     if (window.XMLHttpRequest)
